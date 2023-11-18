@@ -55,7 +55,7 @@
     />
 
     <Input v-model="form.task_number" :label="__('Task Number')" name="task_number" />
-    
+
     <Input v-model="form.task_title" :label="__('Task Title')" name="task_title" />
 
     <SearchCustomer v-model="form.customer" :label="__('Customer')" name="customer" />
@@ -145,7 +145,7 @@ export default {
       if (search?.task_number) {
         this.form.task_number = parseInt(search.task_number);
       }
-      
+
       if (search?.task_title) {
         this.form.task_title = parseInt(search.task_title);
       }
